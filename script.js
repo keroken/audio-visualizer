@@ -47,7 +47,7 @@ function init() {
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    var planeGeometry = new THREE.PlaneGeometry(800, 800, 20, 20);
+    var planeGeometry = new THREE.PlaneGeometry(800, 800, 40, 40);
     var planeMaterial = new THREE.MeshLambertMaterial({
       color: 0x6904ce,
       side: THREE.DoubleSide,
@@ -74,7 +74,7 @@ function init() {
     ball.position.set(0, 0, 0);
     group.add(ball);
 
-    var ambientLight = new THREE.AmbientLight(0xaaaaaa);
+    var ambientLight = new THREE.AmbientLight(0x999999);
     scene.add(ambientLight);
 
     var spotLight = new THREE.SpotLight(0xffffff);
